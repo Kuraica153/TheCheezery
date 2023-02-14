@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+>
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/capuccino"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+    />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+    >
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capuccino"
+            android:textColor="@color/accent_pink"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            android:textFontWeight="600"
+            android:layout_marginLeft="5dp"
+        />
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del producto"
+            android:textColor="@color/pinky"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="5dp"
+        />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/accent_pink"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textFontWeight="600"
+        android:text="$20"
+    />
+</LinearLayout>
